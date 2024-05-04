@@ -21,7 +21,7 @@ function clickButton() {
 clickButton();
 
 // Set interval to click the button every one second
-setInterval(clickButton, 1000);
+setInterval(clickButton, 2000);
 
 
 
