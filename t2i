@@ -76,4 +76,4 @@ function downloadImages() {
 downloadImages();
 
 // Call the function every 1 seconds
-setInterval(downloadImages, 1000);
+setInterval(downloadImages, 10);
