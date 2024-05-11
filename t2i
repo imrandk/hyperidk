@@ -23,7 +23,9 @@ clickButton();
 // Set interval to click the button every one second
 setInterval(clickButton, 1000);
 
-
+/*
+ * Code 1
+ */
 
 
 // Select the input element
@@ -40,7 +42,9 @@ var newElement = document.querySelector('.space-y-1:nth-child(2) > .flex');
 newElement.select();
 
 
-
+/*
+ * Code 2
+ */
 
 
 
