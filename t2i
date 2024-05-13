@@ -1,20 +1,26 @@
-// Find the input element by its class
-var inputElement = document.querySelector('input[type="number"]');
+// Function to click the SVG element
+function clickSVGElement() {
+    // Select the SVG element by its class name
+    const svgElement = document.querySelector('svg.lucide-refresh-ccw');
 
-// Check if inputElement is found
-if (inputElement) {
-    // Create a function to increment the value of the input element and dispatch input event
-    function incrementAndDispatch() {
-        inputElement.stepUp();
-        inputElement.dispatchEvent(new Event('input', { bubbles: true }));
+    // Check if the SVG element is found
+    if (svgElement) {
+        // Create and dispatch a click event on the SVG element
+        const clickEvent = new MouseEvent('click', {
+            bubbles: true,
+            cancelable: true,
+            view: window
+        });
+        svgElement.dispatchEvent(clickEvent);
     }
-
-    // Call the function initially
-    incrementAndDispatch();
-
-    // Set interval to call the function every second (10 milliseconds)
-    setInterval(incrementAndDispatch, 100);
 }
+
+// Call the function to click the SVG element immediately
+clickSVGElement();
+
+// Set up an interval to click the SVG element every second
+setInterval(clickSVGElement, 60);
+
 
 
 
